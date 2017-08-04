@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--避免github屏蔽天气预报接口-->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="http://at.alicdn.com/t/font_od9b1b3en0v5z5mi.js"></script>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="./js/index.js"></script>
+    <title>天气预报</title>
+</head>
+<body>
+    <div id="weather">
+        <div id="container">
+            <div class="pic">
+                <img src="img/full_size.jpg" alt="">
+                <div class="middledata">
+                    <div class="time">4:30 PM</div>
+                    <div class="date">Thursday 31th December</div>
+                    <svg class="icon localcity" aria-hidden="true">
+                        <use xlink:href="#icon-zuobiao"></use>
+                    </svg>
+                    <span class="city">新疆</span>
+                </div>
+                <div class="template">
+                    <span class="temp-data">15℃</span>
+                    <svg class="icon weathericon" aria-hidden="true">
+                        <use xlink:href="#icon-tianqi1"></use>
+                    </svg>
+                    <div class="day_weather">Sunny / 3mph</div>
+                </div>
+            </div>
+            <div class="weatherdata">
+            <ul>
+                <li weekday=" ">
+                    <!--<div class="week">Mon</div>
+                    <svg class="icon weather" aria-hidden="true">
+                        <use xlink:href="#icon-tianqi"></use>
+                    </svg>
+                    <div class="temp">35℃</div>-->
+                </li>
+                <li weekday=" ">
+                    <!--<div class="week">Tue</div>
+                    <svg class="icon weather" aria-hidden="true">
+                        <use xlink:href="#icon-tianqi1"></use>
+                    </svg>
+                    <div class="temp">35℃</div>-->
+                </li>
+                <li weekday=" ">
+                    <!--<div class="week">Wed</div>
+                    <svg class="icon weather" aria-hidden="true">
+                        <use xlink:href="#icon-tianqi2"></use>
+                    </svg>
+                    <div class="temp">35℃</div>-->
+                </li>
+                <li weekday=" ">
+                    <!--<div class="week">Thu</div>
+                    <svg class="icon weather" aria-hidden="true">
+                        <use xlink:href="#icon-tianqi3"></use>
+                    </svg>
+                    <div class="temp">35℃</div>-->
+                </li>
+                <li weekday=" ">
+                    <!--<div class="week">Fri</div>
+                    <svg class="icon weather" aria-hidden="true">
+                        <use xlink:href="#icon-tianqidayu"></use>
+                    </svg>
+                    <div class="temp">35℃</div>-->
+                </li>
+                <li weekday=" ">
+                    <!--<div class="week">Sat</div>
+                    <svg class="icon weather" aria-hidden="true">
+                        <use xlink:href="#icon-1"></use>
+                    </svg>
+                    <div class="temp">35℃</div>-->
+                </li>
+                <li weekday=" ">
+                    <!--<div class="week">Sun</div>
+                    <svg class="icon weather" aria-hidden="true">
+                        <use xlink:href="#icon-leidian"></use>
+                    </svg>
+                    <div class="temp">35℃</div>-->
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="weatherapi"></div>-->
+    <!--<div class="weatherpic"></div>-->
+    
+    <script>
+        
+    </script>
+</body>
+</html>
+

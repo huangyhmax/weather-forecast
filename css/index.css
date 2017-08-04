@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-family: "微软雅黑";
+}
+html,body{
+    height:100%;
+}
+.icon {
+    width: 1em; 
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;                   
+}
+#weather{
+    margin:10px;
+    /*height:100%;*/
+    background-color:#351E24;
+    box-shadow:0px 0px 15px #202020;
+    padding:10px 40px;
+}
+#container>.pic{
+    position: relative;
+    /*text-align: center;*/
+}
+.pic>.middledata{
+    position: absolute;
+    width: 260px;
+    height: 140px;
+    top: 0;
+    left: 500px;
+    /*background-color: red;*/
+    color:#fff;
+    text-align: center;
+}
+.middledata>.localcity{
+    font-size: 30px;
+    fill:#fff;
+    vertical-align: middle;
+    /*position: absolute;
+    left: 5px;*/
+}
+.middledata>.time{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.middledata>.date{
+    font-size: 18px;
+    /*font-weight: bold;*/
+    margin: 25px 0px;
+}
+.middledata>.city{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    vertical-align: middle;
+}
+.pic .template{
+    width: 280px;
+    height: 130px;
+    /*background: red;*/
+    position: absolute;
+    top: 70px;
+    left: 30px;
+}
+.template>.temp-data{
+    font-size: 70px;
+    color: #fff;
+    font-family: arial; 
+}
+.template>.weathericon{
+    font-size: 70px;
+    fill: #fff;
+    margin-left: 20px;
+}
+.template>.day_weather{
+    margin: 5px;
+    color: #fff;
+}
+#container>.pic>img{
+/*border:1px solid red;*/
+width:1250px;
+height:700px;
+/*background: url(img/full_size.jpg) no-repeat;*/
+/*background-size: contain;*/
+}
+#container>.weatherdata{
+background: #fff;
+width: 1248px;
+height: 180px;
+margin-left: 1px;
+margin-top: -5px;
+font-size: 0px;
+}
+.weatherdata>ul{
+    padding: 0px 18px;
+}
+ul>li{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 173px;
+    height: 180px;
+    /*background-color: red;
+    border: 1px solid black;*/
+    font-size: 14px;
+    padding: 20px 10px;
+    text-align: center;
+    /*border:1px solid red;*/
+}
+ul>li:hover{
+    box-shadow: 0 0 25px #FE7883;
+    color: #F74F5C;
+    /* margin-top: -18px; */
+    position: relative;
+    top: -17px; 
+}
+li:hover>.week,li:hover>.weather,li:hover>.temp{
+    font-size: 25px;
+    margin-top: 3px;
+}
+li>.week{
+    font-family: "微软雅黑";
+    font-size: 20px;
+    font-weight: bold;
+    color: #364050;
+}
+li>.weather{
+    color: #2E384A;
+    font-size: 40px;
+    margin: 20px 0px;
+}
+li>.temp{
+    /*display: inline-block;*/
+    font-size: 23px;
+    color: #364050;
+    font-weight: bold;
+}
+li.today>.week,li.today>.weather,li.today>.temp{
+    color: #F74F5C;
+}
+li>.weatherpic{
+    width: 200px;
+    height: 200px;
+    background: red;
+}
