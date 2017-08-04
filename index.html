@@ -92,7 +92,26 @@
     <!--<div class="weatherpic"></div>-->
     
     <script>
-        
+        var time=new Date();
+        // console.log(time);
+        var hour=time.getHours();
+        var amorpm='';
+        if(hour>12){
+            amorpm="PM";
+        }else if(hour<12){
+            amorpm="AM"
+        }
+        function pad(s){
+            if(s.toString().length==1){
+                return '0'+s;
+            }else{
+                return s;
+            }
+        }
+        var times=pad(hour)+':'+pad(time.getMinutes())+' '+amorpm;
+        // console.log(times);
+        $('.middledata>.time').text(times);
+        // console.log(times)
     </script>
 </body>
 </html>

@@ -1,17 +1,3 @@
-var time=new Date();
-// console.log(time);
-var hour=time.getHours();
-var amorpm='';
-if(hour>12){
-    amorpm="PM";
-}else if(hour<12){
-    amorpm="AM"
-}
-var times=hour+':'+time.getMinutes()+' '+amorpm;
-console.log(times);
-$('.middledata>.time').text(times);
-// console.log(times)
-
 $.get('http://weixin.jirengu.com/weather').done(function(ret){
     if(ret.status="OK"){
         // $('.weatherapi').text(JSON.stringify(ret));
